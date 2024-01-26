@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Precios</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <header class="logo-container">
+        <img src="/Logo.png" alt="Logo">
+    </header>
+
+    <button onclick="window.location.href='/descargar'">Descargar</button>
+
+    <form action="/actualizar" method="post" enctype="multipart/form-data">
+        <div class="drop-zone" id="drop-zone">
+            <p>Arrastra y suelta o haz clic para seleccionar un archivo</p>
+            <input type="file" name="file" accept=".xlsx" id="file-upload" hidden>
+            <p id="file-name"></p>
+        </div>
+        <input type="submit" value="Actualizar precios">
+    </form>
+
+    <footer class="watermark">Elaborado por: Carlos Espinoza</footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
